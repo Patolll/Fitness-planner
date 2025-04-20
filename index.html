@@ -2,14 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
     <title>Vite App</title>
   </head>
   <body>
     <div>
-      <h1 class="text-3xl font-bold">Hello world!</h1>
+      <!-- content wrapper -->
+      <div class="content-wrapper min-h-screen flex flex-col">
+        <!-- navigation -->
+        <nav class="flex items-center justify-between bg-white p-6">
+          <a href=""
+            ><img class="w-60 h-20" src="/img/logo.png" alt="Page logo"
+          /></a>
+
+          <ul class="flex space-x-4">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- main content -->
+      <main></main>
+      <!-- footer -->
+      <footer class="mt-auto">gfdgfd</footer>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
