@@ -17,3 +17,7 @@ a:hover {
 .user-link img {
   @apply h-5 w-auto;
 }
+
+.footer-item img {
+  @apply h-15 w-auto;
+}
