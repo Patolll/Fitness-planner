@@ -5,16 +5,16 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
-    <title>Vite App</title>
+    <title>Fitness planner</title>
   </head>
   <body>
-    <div>
+    <div class="content-wrapper">
       <!-- content wrapper -->
-      <div class="content-wrapper min-h-screen flex flex-col">
+      <div class="nav-wrapper min-h-screen flex-col hidden lg:flex">
         <!-- navigation -->
         <nav class="flex items-center justify-between bg-white p-6">
           <a href=""
-            ><img class="w-60 h-20" src="/img/logo.png" alt="Page logo"
+            ><img class="h-15 w-auto" src="/img/logo.png" alt="Page logo"
           /></a>
 
           <ul class="flex space-x-4">
@@ -30,8 +30,75 @@
           </ul>
         </nav>
       </div>
+
+      <!-- hamburger menu -->
+      <div class="hamburger-wrapper lg:hidden">
+        <nav class="flex items-center justify-between bg-white p-6">
+          <a href=""
+            ><img
+              class="h-10 w-auto sm:h-10 md:h-12"
+              src="/img/logo.png"
+              alt="Page logo"
+          /></a>
+
+          <ul class="flex space-x-2 items-center">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li><button id="menuBtn" class="text-2xl">☰</button></li>
+          </ul>
+        </nav>
+        <nav
+          id="mobileMenu"
+          class="max-h-0 w-1/2 absolute right-0 ml-auto overflow-hidden transition-all duration-300 ease-in-out bg-white shadow-md"
+        >
+          <ul class="p-4 flex flex-col gap-2">
+            <li>
+              <a href="#" class="user-link"
+                ><img src="/img/circle-user-solid.svg" alt="User icon" />User
+                name</a
+              >
+            </li>
+
+            <li>
+              <a class="user-link" href="#"
+                ><img src="/img/house-solid.svg" alt="Home icon" />Dashboard</a
+              >
+            </li>
+            <li>
+              <a class="user-link" href="#"
+                ><img
+                  src="/img/dumbbell-solid.svg"
+                  alt="Dumbbell icon"
+                />Workouts</a
+              >
+            </li>
+            <li>
+              <a class="user-link" href="#"
+                ><img
+                  src="/img/utensils-solid.svg"
+                  alt="Utensils icon"
+                />Meals</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- aside -->
+      <aside
+        class="aside-wrapper hidden lg:block w-64 bg-gray-800 text-white p-4"
+      ></aside>
+
       <!-- main content -->
-      <main></main>
+      <main class="h-screen bg-[#d9d9d9]"></main>
+
       <!-- footer -->
       <footer class="mt-auto">gfdgfd</footer>
     </div>
