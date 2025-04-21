@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/src/style.css" />
     <title>Fitness planner</title>
   </head>
-  <body>
-    <div class="content-wrapper">
+  <body class="flex flex-col min-h-screen">
+    <div class="content-wrapper flex-1">
       <!-- content wrapper -->
       <div class="nav-wrapper min-h-screen flex-col hidden lg:flex">
         <!-- navigation -->
@@ -91,14 +91,13 @@
         </nav>
       </div>
 
+      <!-- main content -->
+      <main class="h-screen bg-[#d9d9d9]"></main>
+
       <!-- aside -->
       <aside
         class="aside-wrapper hidden lg:block w-64 bg-gray-800 text-white p-4"
       ></aside>
-
-      <!-- main content -->
-      <main class="h-screen bg-[#d9d9d9]"></main>
-
       <!-- footer -->
       <footer
         class="mt-auto bg-[#505050] text-white h-50 flex flex-col items-center justify-center"
