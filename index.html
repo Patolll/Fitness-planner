@@ -10,7 +10,7 @@
   <body class="flex flex-col min-h-screen">
     <div class="content-wrapper flex-1">
       <!-- content wrapper -->
-      <div class="nav-wrapper min-h-screen flex-col hidden lg:flex">
+      <div class="nav-wrapper flex-col hidden lg:flex">
         <!-- navigation -->
         <nav class="flex items-center justify-between bg-white p-6">
           <a href=""
@@ -92,53 +92,61 @@
       </div>
 
       <!-- main content -->
-      <main class="h-screen bg-[#d9d9d9]">
-        <div
-          class="boxes flex flex-col lg:flex-row items-center justify-center gap-4 p-4"
+      <div class="main-aside-wrapper flex flex-1">
+        <!-- aside -->
+        <aside
+          class="aside-wrapper hidden lg:block w-64 bg-gray-800 text-white p-4"
+        ></aside>
+        <!-- main class -->
+        <main
+          class="h-screen bg-[#d9d9d9] w-full flex items-center justify-center"
         >
           <div
-            class="trainings-box w-80 shadow-lg bg-gray-600 rounded-br-2xl rounded-tl-2xl"
+            class="boxes flex flex-col lg:flex-row items-center justify-center gap-4 p-4"
           >
-            <img
-              src="/img/trainings.jpg"
-              class="rounded-tl-2xl"
-              alt="Training photo"
-            />
-            <div class="p-4 text-white flex flex-col items-center">
-              <h2 class="text-2xl font-bold mb-2 self-start">Trainings</h2>
-              <p class="text-sm opacity-80">
-                Create custom workout schedules that suit your goals.
-              </p>
-              <button
-                class="bg-blue-500 text-white py-2 px-4 rounded mt-2 w-full"
-              >
-                START
-              </button>
+            <div
+              class="trainings-box relative w-full shadow-lg bg-gray-600 rounded-br-2xl rounded-tl-2xl"
+            >
+              <img
+                src="/img/trainings.jpg"
+                class="rounded-tl-2xl h-50 lg:h-70 object-cover w-full"
+                alt="Training photo"
+              />
+              <div class="p-4 text-white flex flex-col items-center">
+                <h2 class="text-2xl font-bold mb-2 self-start">Trainings</h2>
+                <p class="text-sm opacity-80">
+                  Create custom workout schedules that suit your goals.
+                </p>
+                <button
+                  class="bg-blue-500 text-white py-2 px-4 self-center rounded mt-2 w-[95%] hover:scale-105 hover:shadow-lg shadow-blue-400/50 duration-400 cursor-pointer active:scale-90"
+                >
+                  START
+                </button>
+              </div>
+            </div>
+            <div
+              class="diet-box relative w-full shadow-lg bg-gray-600 rounded-br-2xl rounded-tl-2xl"
+            >
+              <img
+                src="/img/diet2.jpg"
+                class="rounded-tl-2xl h-50 lg:h-70 object-cover w-full"
+                alt="Diet photo"
+              />
+              <div class="p-4 text-white flex flex-col items-center">
+                <h2 class="text-2xl font-bold mb-2 self-start">Diet</h2>
+                <p class="text-sm opacity-80">
+                  Get personalized meal plans and nutrition advice.
+                </p>
+                <button
+                  class="bg-blue-500 text-white py-2 px-4 self-center rounded mt-2 w-[95%] hover:scale-105 hover:shadow-lg shadow-blue-400/50 duration-400 cursor-pointer active:scale-90"
+                >
+                  START
+                </button>
+              </div>
             </div>
           </div>
-          <div
-            class="diet-box w-80 shadow-lg bg-gray-600 rounded-br-2xl rounded-tl-2xl"
-          >
-            <img src="/img/diet2.jpg" class="rounded-tl-2xl" alt="Diet photo" />
-            <div class="p-4 text-white">
-              <h2 class="text-2xl font-bold mb-2">Diet</h2>
-              <p class="text-sm opacity-80">
-                Get personalized meal plans and nutrition advice.
-              </p>
-              <button
-                class="bg-blue-500 text-white py-2 px-4 rounded mt-2 w-full"
-              >
-                START
-              </button>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <!-- aside -->
-      <aside
-        class="aside-wrapper hidden lg:block w-64 bg-gray-800 text-white p-4"
-      ></aside>
+        </main>
+      </div>
       <!-- footer -->
       <footer
         class="mt-auto bg-[#505050] text-white h-50 flex flex-col items-center justify-center"
