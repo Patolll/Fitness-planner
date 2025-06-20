@@ -33,6 +33,7 @@ fetch(proxy + url)
     return response.json();
   })
   .then((data) => {
+    console.log(data);
     const randomIndex = getRandomInt(0, data.length - 1);
     const quote = data[randomIndex].q;
     const author = data[randomIndex].a;
